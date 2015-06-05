@@ -1,0 +1,9 @@
+*.pyc
+*.kate-swp
+django-remindme-tests/
+build/
+venv/
+venv3/
+static/
+key.py
+TODO.txt

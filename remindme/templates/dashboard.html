@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Django RemindMe</h1>
+<p class="lead">Create email based reminders for yourself and others.</p>
+<p class="lead"><a id="create" href="/create">Create reminder</a></p>
+
+<p class="lead">
+    <h2>Reminders</h2>
+    {% for reminder in reminders %}
+        <p id="reminder__{{ reminder.id }}">{{ reminder.description }}: {{ reminder.date_and_time }}</p>
+    {% endfor %}
+</p>
+{% endblock %}

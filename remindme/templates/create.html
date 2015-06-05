@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h1>Create reminder</h1>
+<p class="lead">Create email based reminders for yourself and others.</p>
+<form method="post" action="">
+{{ form|crispy }}
+{% csrf_token %}
+<input type="submit" class="btn btn-large btn-success" value="Create" />
+</form>
+{% endblock %}
