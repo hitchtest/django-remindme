@@ -1,6 +1,7 @@
 *.pyc
 *.kate-swp
 django-remindme-tests/
+tests/
 build/
 venv/
 venv3/
