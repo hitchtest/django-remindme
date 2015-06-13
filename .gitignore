@@ -3,8 +3,7 @@
 django-remindme-tests/
 tests/
 build/
-venv/
-venv3/
+venv*/
 static/
 key.py
 TODO.txt
