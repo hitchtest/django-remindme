@@ -1,8 +1,6 @@
 from django import forms
 from models import Reminder
 
-class ReminderForm(forms.ModelForm):
-
-    class Meta:
-        model = Reminder
-        exclude = ('sent', 'user', )
+class ReminderForm(forms.Form):
+    description = forms.CharField()
+    when = forms.CharField()

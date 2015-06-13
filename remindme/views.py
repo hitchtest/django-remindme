@@ -4,8 +4,9 @@ from django.template import RequestContext
 from django.http import HttpResponseNotFound, HttpResponseRedirect
 from forms import ReminderForm
 from models import Reminder
+import parsedatetime
 import datetime
-
+import time
 
 def home(request):
     return render_to_response("index.html")
@@ -20,9 +21,16 @@ def create(request):
     if request.method == 'POST':
         form = ReminderForm(request.POST)
         if form.is_valid():
-            new_reminder = form.save(commit=False)
-            new_reminder.user = request.user
-            new_reminder.save()
+            date_and_time = datetime.datetime.fromtimestamp(
+                time.mktime(parsedatetime.Calendar().parse(
+                    form.cleaned_data['when']
+                )[0])
+            )
+            Reminder.objects.create(
+                user = request.user,
+                description = form.cleaned_data['description'],
+                date_and_time = date_and_time,
+            )
             return HttpResponseRedirect("/dashboard")
     else:
         form = ReminderForm()
