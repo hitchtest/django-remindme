@@ -1,8 +1,8 @@
-from django.shortcuts import render_to_response
-from django.contrib.auth.decorators import login_required
-from django.template import RequestContext
 from django.http import HttpResponseNotFound, HttpResponseRedirect
-from forms import ReminderForm
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+from remindme.forms import ReminderForm
 from models import Reminder
 import parsedatetime
 import datetime

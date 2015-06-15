@@ -1,5 +1,5 @@
 from django import forms
-from models import Reminder
+from remindme.models import Reminder
 
 class ReminderForm(forms.Form):
     description = forms.CharField()
