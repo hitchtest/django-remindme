@@ -9,4 +9,4 @@ install:
   - "cd django-remindme-tests"
   - "hitch init"
 script:
-  - "hitch test . --quiet"
+  - "hitch test . --extra '{\"pause_on_failure\":false}'"
