@@ -1,3 +1,0 @@
-[submodule "django-remindme-tests"]
-path = django-remindme-tests
-url = https://github.com/hitchtest/django-remindme-tests.git
