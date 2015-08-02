@@ -9,5 +9,4 @@ install:
   - "cd django-remindme-tests"
   - "hitch init"
 script:
-  - "cd django-remindme-tests"
   - "hitch test . --quiet"
