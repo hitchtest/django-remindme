@@ -9,4 +9,4 @@ install:
   - "cd django-remindme-tests"
   - "hitch init"
 script:
-  - "hitch test . --quiet --extra '{\"show_hitch_stacktrace\":true}'"
+  - "hitch test . --extra '{\"show_hitch_stacktrace\":true,\"xvfb\":true,\"pause_on_failure\":false}'"
