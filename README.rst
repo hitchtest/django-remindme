@@ -1,6 +1,9 @@
 Django-RemindMe
 ===============
 
+.. image:: https://travis-ci.org/hitchtest/django-remindme.svg?branch=master
+    :target: https://travis-ci.org/hitchtest/django-remindme
+
 Django-RemindMe is a small example app for emailing reminders. It was built
 to demonstrate the feature set of the Hitch Testing Framework.
 
