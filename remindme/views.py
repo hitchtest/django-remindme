@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from remindme.forms import ReminderForm
-from models import Reminder
+from remindme.models import Reminder
 import parsedatetime
 import datetime
 import time
