@@ -19,6 +19,7 @@ It is built using the following:
 * Django all-auth
 
 There are some example tests in the project Django-RemindMe-Tests_ which
-you can clone inside this repository and run directly.
+you can clone inside this repository and run directly. Click the link
+and see the README for more details on how to run the tests (it's very easy).
 
 .. _Django-RemindMe-Tests: https://github.com/hitchtest/django-remindme-tests
