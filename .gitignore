@@ -1,5 +1,6 @@
 *.pyc
 *.kate-swp
+.vagrant
 django-remindme-tests/
 tests/
 build/
