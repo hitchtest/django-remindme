@@ -4,8 +4,7 @@
 django-remindme-tests/
 tests/
 build/
-venv*/
-pyv*/
 static/
 key.py
 TODO.txt
+test_settings.py
